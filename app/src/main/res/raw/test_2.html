@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function sendData(theForm) {
+                Android.openActivity(theForm.fname.value, theForm.lname.value);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>The input element</h1>
+        <form action="javascript:sendData(this);">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Click the "Submit" button and the form-data will be sent to Android code.</p>
+    </body>
+</html>
